@@ -46,6 +46,9 @@ jobs:
     - name: Check out code
       uses: actions/checkout@v2
 
+    - name: Extract Git Tag
+      run: echo "GIT_TAG=${GITHUB_REF/refs\/tags\//}" >> $GITHUB_ENV
+
     - name: update image tag in manifest
       uses: imranismail/setup-kustomize@v1
     - run: |
@@ -57,7 +60,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git commit -am "Set image tag to `${{ env.GIT_TAG }}`"
+        git commit -am "update image tag to ${{ env.GIT_TAG }}"
 
     - name: Push changes
       uses: ad-m/github-push-action@master
