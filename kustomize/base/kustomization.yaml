@@ -8,4 +8,4 @@ namespace: default
 images:
 - name: saymyname
   newName: tanmaybhat/saymyname
-  newTag: 566b8f8c99bf8b3219b507f6ce294d6dd705c775
+  newTag: a92163c0310b8b0ec8c771448b8d0fbf41acdc8f
