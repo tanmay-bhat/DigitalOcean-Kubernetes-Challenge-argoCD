@@ -7,4 +7,4 @@ resources:
 namespace: default
 images:
 - name: tanmaybhat/saymyname
-  newTag: v1.0.10
+  newTag: v1.0.11
