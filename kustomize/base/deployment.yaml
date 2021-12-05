@@ -16,7 +16,7 @@ spec:
         app: saymyname
     spec:
       containers:
-        - image: saymyname
+        - image: tanmaybhat/saymyname
           name: saymyname
           ports:
             - name: http
