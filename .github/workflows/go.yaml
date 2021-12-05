@@ -51,17 +51,14 @@ jobs:
     - run: |
           cd kustomize/base
           kustomize edit set image saymyname:${{ env.GIT_TAG }}
-          cat kustomization.yaml
-          git add .
-          git commit -m "Set image tag to `${{ env.GIT_TAG }}`"
-          git push    
+    
 
     - name: Commit files
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git commit -am "Set image tag to `${{ env.GIT_TAG }}`"
-        
+
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
