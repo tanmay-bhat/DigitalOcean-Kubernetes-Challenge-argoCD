@@ -35,7 +35,7 @@ jobs:
       with:
         context: .
         push: true
-        tags: tanmaybhat/saymyname:$GIT_TAG
+        tags: tanmaybhat/saymyname:$ {{ GIT_TAG }}
 
   deploy:
     name: Deploy
@@ -49,7 +49,7 @@ jobs:
     - name: update image tag in manifest
       uses: imranismail/setup-kustomize@v1
     - run: |
-          kustomize edit set image saymyname:${GIT_TAG}
+          kustomize edit set image saymyname:$ {{ GIT_TAG }}
           git add .
-          git commit -m "Set image tag to `${GIT_TAG}`"
+          git commit -m "Set image tag to `${{ GIT_TAG }}`"
           git push      
