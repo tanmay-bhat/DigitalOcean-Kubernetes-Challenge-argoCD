@@ -16,9 +16,10 @@ spec:
         app: saymyname
     spec:
       containers:
-        - image: tanmaybhat/saymyname
+        - image: registery.digitalocean.com/tanmaybhat/saymyname
           name: saymyname
           ports:
             - name: http
               containerPort: 8080
-   
+      imagePullSecrets:
+      - name: tanmaybhat
