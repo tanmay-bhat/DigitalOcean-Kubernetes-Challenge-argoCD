@@ -1,4 +1,5 @@
 FROM golang:1.14 as build
+MAINTAINER "tanmay_bhat"
 WORKDIR /build
 COPY . .
 RUN CGO_ENABLED=0 go build -o saymyname application/main.go
