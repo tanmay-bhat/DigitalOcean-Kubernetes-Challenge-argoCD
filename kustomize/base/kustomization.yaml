@@ -7,5 +7,3 @@ resources:
 namespace: default
 images:
 - name: saymyname
-  newName: tanmaybhat/saymyname
-  newTag: a92163c0310b8b0ec8c771448b8d0fbf41acdc8f
