@@ -16,7 +16,7 @@ spec:
         app: saymyname
     spec:
       containers:
-        - image: registery.digitalocean.com/tanmaybhat/saymyname
+        - image: registry.digitalocean.com/tanmaybhat/saymyname
           name: saymyname
           ports:
             - name: http
