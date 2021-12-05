@@ -33,8 +33,8 @@ jobs:
 
     - name: push image to digitalocean
       run: |
-        docker build -t registry.digitalocean.com/saymyname:${{ env.GIT_TAG }} .
-        docker push registry.digitalocean.com/saymyname:${{ env.GIT_TAG }}
+        docker build -t registry.digitalocean.com/tanmaybhat/saymyname:${{ env.GIT_TAG }} .
+        docker push registry.digitalocean.com/tanmaybhat/saymyname:${{ env.GIT_TAG }}
 
   deploy:
     name: Deploy
