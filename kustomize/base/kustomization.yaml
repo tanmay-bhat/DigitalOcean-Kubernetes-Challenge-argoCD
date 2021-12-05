@@ -7,3 +7,4 @@ resources:
 namespace: default
 images:
 - name: saymyname
+  newTag: v1.0.7
