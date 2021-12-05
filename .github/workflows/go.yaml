@@ -52,7 +52,7 @@ jobs:
       uses: imranismail/setup-kustomize@v1
     - run: |
           cd kustomize/base
-          kustomize edit set image tanmaybhat/saymyname:${{ env.GIT_TAG }}
+          kustomize edit set image registry.digitalocean.com/tanmaybhat/saymyname:${{ env.GIT_TAG }}
     
     - name: Commit files
       run: |
