@@ -7,6 +7,6 @@ resources:
 namespace: default
 images:
 - name: registry.digitalocean.com/tanmaybhat/saymyname
-  newTag: v1.0.12
+  newTag: v1.0.13
 - name: tanmaybhat/saymyname
   newTag: v1.0.11
